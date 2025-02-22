@@ -28,7 +28,7 @@ print(nome[:12])
 print(nome[::2])
 
 email = 'fulano@ctrplay.com.br'
-print(email,find('@'))
+print(email.find('@'))
 pos = email.find('@')
 print (email[:pos])
 
@@ -41,3 +41,21 @@ print(nome*5)
 media = 6.5
 print('A média do '+nome+' foi de '+str(media))
 print('Amédia do',nome,'foide',media)
+
+#region Métodos de String
+exemplo = "Ctrl+play - escola de programação e robótica"
+#colocar tudo em maiusculo
+print(exemplo.upper())
+#minusculo
+print(exemplo.lower())
+#divide a string nos espaços em branco
+cadaPalavra = exemplo.split()
+print(cadaPalavra[2])
+#divide em um elemento específico(não inclui o elemento que foi dividido)
+cadaPalavra + exemplo.split('-')
+print(cadaPalavra[1])
+
+#endregion
+
+nome=input(" Digite seu nome: ")
+print("\nOlá " +nome)
