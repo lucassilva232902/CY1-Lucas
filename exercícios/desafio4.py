@@ -1,0 +1,1 @@
+print('escreva um número de 1 a 10')
